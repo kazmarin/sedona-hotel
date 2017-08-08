@@ -1605,6 +1605,7 @@ body {
   @media (max-width: 767px) {
   .page-header__wrapper {
     position: absolute;
+    z-index: 5;
     top: 0;
     left: 0;
     width: 100%;
