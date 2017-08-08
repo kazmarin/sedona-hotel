@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  @@include('_include/page-head.html')
+  <title>Форма отзыва отели SEDONA</title>
+</head>
+<body>
+
+  @@include('img/sprite-svg.svg')
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+
+      <div class="page-header__menu">
+        <div class="page-header__container">
+          <a href="#" class="page-header__logo logo">
+            <svg class="logo-s" width="102" height="83"><use xlink:href="#logo--s"></use></svg>
+            <svg class="logo-m" width="102" height="83"><use xlink:href="#logo--m"></use></svg>
+            <svg class="logo-lg" width="188" height="96"><use xlink:href="#logo--lg"></use></svg>
+          </a>
+
+          <button class="page-header__btn-wrap btn-toggle">
+            <svg width="23" height="21"><use xlink:href="#icon-menu"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="page-header__navbar-wrap navbar">
+        <div class="navbar__container">
+          <button class="navbar__btn-wrap btn-toggle">
+            <svg width="23" height="22"><use xlink:href="#icon-cross"></use></svg>
+          </button>
+        </div>
+
+        <nav class="navbar__nav-wrapper navbar__nav-toggle-wrap main-nav main-nav-toggle">
+          <ul class="main-nav__list main-nav-toggle__list">
+            <li class="main-nav__item main-nav-toggle__item">
+              <a href="#" class="main-nav__link main-nav-toggle__link">ГЛАВНАЯ</a>
+            </li>
+            <li class="main-nav__item main-nav-toggle__item">
+              <a href="#" class="main-nav__link main-nav-toggle__link">ФОТО И ВИДЕО</a>
+            </li>
+            <li class="main-nav__item main-nav-toggle__item">
+              <a href="#" class="main-nav__link main-nav-toggle__link">ФОРМА ОТЗЫВА</a>
+            </li>
+            <li class="main-nav__item main-nav-toggle__item">
+              <a href="#" class="main-nav__link main-nav-toggle__link">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="page-header__icon-inner">
+      <p class="page-header__icon-sedona">
+        <svg class="text-sedona" width="229" height="39"><use xlink:href="#text-sedona--lg"></use></svg>
+      </p>
+      <picture class="">
+        <source media="(min-width: 1200px)" srcset="img/intro-triangle-l.png">
+        <source media="(min-width: 768px)" srcset="img/intro-triangle-m.png">
+        <img src="img/intro-triangle-s.png" alt="" class="page-header__icon-triangle">
+      </picture>
+    </div>
+  </header>
+
+  <main>
+    <div class="reviews">
+      <h2 class="reviews__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+      <p class="reviews__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+
+      <form class="reviews__form-wrap form" name="form-reviews" method="post" novalidate>
+        <section class="form__personal-data personal-data">
+          <div class="personal-data__container">
+            <h3 class="personal-data__title">ПРЕДСТАВЬТЕСЬ:</h3>
+            <div class="personal-data__wrapper">
+              <div class="personal-data__item">
+                <label class="personal-data__label">
+                  <span class="personal-data__text">ИМЯ*:</span>
+                  <input class="personal-data-select" type="text" name="name" placeholder="Петр" required />
+                </label>
+              </div>
+
+              <div class="personal-data__item">
+                <label class="personal-data__label">
+                  <span class="personal-data__text">ФАМИЛИЯ*:</span>
+                  <input class="personal-data-select" type="text" name="surname" placeholder="Иванов" required />
+                </label>
+              </div>
+
+              <div class="personal-data__item">
+                <label class="personal-data__label">
+                  <span class="personal-data__text">ОТЧЕСТВО:</span>
+                  <input class="personal-data-select" type="text" name="patronymic" placeholder="Александрович" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__contacts contacts">
+          <div class="contacts__container">
+            <h3 class="contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+            <div class="contacts__wrapper">
+
+              <div class="contacts__item">
+                <div class="contacts__label">
+                  <span class="contacts__text contacts__text1">ТЕЛЕФОН*:</span>
+                  <span class="contacts__text contacts__text2">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+                  <input class="contacts-select" type="tel" pattern="[0-9]{5,11}" name="phone" placeholder="Введите телефон" required />
+                  <span class="contacts__icon"><svg width="18" height="18"><use xlink:href="#phone"></use></svg></span>
+                  <div class="contacts__requirements">Ошибка, перепроверьте номер</div>
+                </div>
+              </div>
+
+              <div class="contacts__item">
+                <div class="contacts__label">
+                  <span class="contacts__text">ЭЛЕКТРОННАЯ ПОЧТА*:</span>
+                  <input class="contacts-select" type="email" placeholder="Введите e-mail" name="email" required />
+                  <span class="contacts__icon"><svg width="16" height="12"><use xlink:href="#mail"></use></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__impression impression">
+          <div class="impression__container">
+            <h3 class="impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h3>
+            <div class="impression__wrapper">
+
+              <div class="impression__item">
+                <label class="impression__controls" for="impression-select1">
+                  <input id="impression-select1" type="checkbox" name="bridge" checked />
+                  <span class="impression__icon"></span>
+                  <span class="impression__text">Скорее положительное</span>
+                </label>
+              </div>
+
+              <div class="impression__item">
+                <label class="impression__controls" for="impression-select2">
+                  <input id="impression-select2" type="checkbox" name="bridge" />
+                  <span class="impression__icon"></span>
+                  <span class="impression__text">Скорее отрицательное</span>
+                </label>
+              </div>
+
+              <div class="impression__item">
+                <label class="impression__controls" for="impression-select3">
+                  <input id="impression-select3" type="checkbox" name="bridge" />
+                  <span class="impression__icon"></span>
+                  <span class="impression__text">Затрудняюсь ответить</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__showplace showplace">
+          <div class="showplace__container">
+            <h3 class="showplace__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h3>
+            <div class="showplace__wrapper">
+              <div class="showplace__item">
+                <label class="showplace__controls" for="showplace-select1">
+                  <input id="showplace-select1" type="checkbox" name="bridge" checked />
+                  <span class="showplace__icon"><svg class="tick" width="24" height="16"><use xlink:href="#tick"></use></svg></span>
+                  <span class="showplace__text">Мост Дьявола</span>
+                </label>
+              </div>
+
+              <div class="showplace__item">
+                <label class="showplace__controls" for="showplace-select3">
+                  <input id="showplace-select3" type="checkbox" name="bridge" checked />
+                  <span class="showplace__icon">
+                    <svg class="tick" width="24" height="16"><use xlink:href="#tick"></use></svg>
+                  </span>
+                  <span class="showplace__text">Слайд-парк</span>
+                </label>
+              </div>
+
+              <div class="showplace__item">
+                <label class="showplace__controls" for="showplace-select2">
+                  <input id="showplace-select2" type="checkbox" name="bridge" />
+                  <span class="showplace__icon">
+                    <svg class="tick" width="24" height="16"><use xlink:href="#tick"></use></svg>
+                  </span>
+                  <span class="showplace__text">Гора-Колокол</span>
+                </label>
+              </div>
+
+              <div class="showplace__item">
+                <label class="showplace__controls" for="showplace-select4">
+                  <input id="showplace-select4" type="checkbox" name="bridge" checked />
+                  <span class="showplace__icon">
+                    <svg class="tick" width="24" height="16"><use xlink:href="#tick"></use></svg>
+                  </span>
+                  <span class="showplace__text">Красные скалы</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form__emotion emotion">
+          <div class="emotion__container">
+            <h3 class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h3>
+            <textarea class="emotion__textarea" name="emotion_text" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+        </section>
+
+        <div class="form__container">
+          <button class="form__btn-wrap btn-push">ОТПРАВИТЬ ОТЗЫВ</button>
+
+          <span class="form__text">* - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__inner">
+        <a href="#" class="page-footer__hashtag">#VISITSEDONA</a>
+
+        <div class="page-footer__social social-footer">
+          <a href="" class="social-footer__item social-footer__twitter">
+            <svg width="18" height="14"><use xlink:href="#icon-twitter"></use></svg>
+          </a>
+          <a href="" class="social-footer__item social-footer__facebook">
+            <svg width="9" height="18"><use xlink:href="#icon-facebook"></use></svg>
+          </a>
+          <a href="" class="social-footer__item social-footer__youtube">
+            <svg width="20" height="14"><use xlink:href="#icon-youtube"></use></svg>
+          </a>
+        </div>
+        <div class="page-footer__wrapper">
+          <span class="page-footer__text">РАЗРАБОТАНО</span>
+          <span class="page-footer__icon"><svg class="htmlacademy" width="27" height="34"><use xlink:href="#htmlacademy"></use></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay-success">
+    <div class="overlay-success__wrapper">
+      <h2 class="overlay-success__title">ВАШ ОТЗЫВ ОТПРАВЛЕН!</h2>
+      <div class="overlay-success__text-wrap">
+        <p class="overlay-success__text">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ.</p>
+        <p class="overlay-success__text">В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
+      </div>
+      <div class="overlay-success__inner">
+        <button class="overlay-success__btn-wrap btn-success">ЗАКРЫТЬ ОКНО</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay-error">
+    <div class="overlay-error__wrapper">
+      <h2 class="overlay-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="overlay-error__text">ПРОВЕРЬТЕ ПОЛЯ, ВЫДЕЛЕННЫЕ КРАСНЫМ, СКОРЕЕ ВСЕГО ВЫ ЗАБЫЛИ ИХ ЗАПОЛНИТЬ</p>
+      <button class="overlay-error__btn-wrap btn-error">ОК</button>
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

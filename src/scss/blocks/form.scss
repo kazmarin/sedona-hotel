@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  box-sizing: border-box;
+
+  @media (max-width: $screen-m - 1) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $screen-m) {
+    flex-wrap: wrap;
+  }
+
+  &__personal-data {
+
+    @media (min-width: $screen-m) {
+      order: -2;
+      width: 50%;
+    }
+  }
+
+  &__contacts {
+
+    @media (min-width: $screen-m) {
+      order: -1;
+      width: 100%;
+    }
+  }
+
+  &__impression {
+
+    @media (min-width: $screen-m) {
+      order: -3;
+      width: 50%;
+    }
+  }
+
+  &__showplace,
+  &__emotion {
+    @media (min-width: $screen-m) {
+      width: 100%;
+    }
+  }
+
+  &__container {
+    @include content-area();
+  }
+
+  &__btn-wrap {
+
+     @media (min-width: $screen-m) {
+      float: left;
+      margin-top: 26px;
+     }
+  }
+
+  &__text {
+    @include text();
+    height: 58px;
+    line-height: 58px;
+
+    @media (max-width: $screen-m - 1) {
+      display: none;
+    }
+
+    @media (min-width: $screen-m) {
+      float: right;
+      margin-top: 27px;
+    }
+  }
+}

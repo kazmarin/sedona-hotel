@@ -1,0 +1,92 @@
+.page-footer {
+  height: 233px;
+  background-color: #fefefe;
+
+  @media (min-width: $screen-m) {
+    height: 120px;
+  }
+
+  &__container {
+    @include content-area();
+  }
+
+  &__inner {
+    padding-top: 26px;
+    box-sizing: border-box;
+
+    @media (min-width: $screen-m) {
+      padding-top: 35px;
+    }
+  }
+
+  &__hashtag {
+    display: block;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: $font-size + 3;
+    line-height: $line-height;
+    color: $text-color;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    @media (min-width: $screen-m) {
+      float: left;
+      width: 196px;
+      height: 48px;
+      line-height: 48px;
+      text-align: left;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 12px;
+      width: 280px;
+    }
+  }
+
+  &__social {
+    margin-top: 36px;
+
+    @media (min-width: $screen-m) {
+      float: left;
+      margin-top: 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-top: 43px;
+    text-align: center;
+
+    @media (min-width: $screen-m) {
+      float: left;
+      margin-top: 0px;
+      padding-top: 10px;
+      width: 196px;
+      text-align: right;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 280px;
+    }
+  }
+
+  &__text {
+    @include text();
+    padding-right: 40px;
+  }
+
+  &__icon {
+    position: absolute;
+    display: inline-block;
+    right: 77px;
+    top: -3px;
+    width: 27px;
+    height: 34px;
+
+    @media (min-width: $screen-m) {
+      right: 0px;
+    top: 6px;
+    }
+  }
+}

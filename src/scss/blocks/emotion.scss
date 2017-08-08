@@ -1,0 +1,50 @@
+.emotion {
+  height: 273px;
+  box-sizing: border-box;
+
+  @media (max-width: $screen-m - 1) {
+    border-top: 1px solid #000;
+  }
+
+  @media (min-width: $screen-m) {
+    height: 295px;
+  }
+
+  @media (min-width: $screen-lg) {
+    height: 295px;
+  }
+
+  &__container {
+    @include content-area();
+  }
+
+  &__title {
+    @include subtitle--s();
+    margin-top: 18px;
+
+    @media (min-width: $screen-m) {
+      @include subtitle--mlg();
+      margin-top: 20px;
+    }
+  }
+
+  &__textarea {
+    @include text-select();
+    margin-top: 17px;
+    padding-top: 16px;
+    padding-left: 19px;
+    width: 100%;
+    height: 160px;
+    border: none;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+
+    &::placeholder {
+      @include text-select();
+    }
+
+    @media (min-width: $screen-m) {
+      margin-top: 58px;
+    }
+  }
+}

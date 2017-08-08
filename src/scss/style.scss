@@ -1,0 +1,31 @@
+@import 'normalize.scss';
+@import 'variables.scss';
+@import 'fonts.scss';
+
+@import 'global.scss';
+
+@import 'mixin.scss';
+
+@import 'blocks/page-header.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/btn-toggle.scss';
+@import 'blocks/navbar.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/main-nav-toggle.scss';
+
+@import 'blocks/reviews.scss';
+@import 'blocks/form.scss';
+@import 'blocks/impression.scss';
+@import 'blocks/personal-data.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/showplace.scss';
+@import 'blocks/emotion.scss';
+@import 'blocks/btn-push.scss';
+
+@import 'blocks/page-footer.scss';
+@import 'blocks/social-footer.scss';
+
+@import 'blocks/overlay-success.scss';
+@import 'blocks/btn-success.scss';
+@import 'blocks/overlay-error.scss';
+@import 'blocks/btn-error.scss';
