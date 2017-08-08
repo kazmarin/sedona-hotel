@@ -9,7 +9,7 @@ $(document).ready(function(){
 // Функция вызова меню успешной отправки и ошибки
   function pushForm(e) {
     e.preventDefault();
-    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    var re = /^\d[\d\(\)\ -]{3,11}\d$/;
     var phone = $("input[name='phone']").val()
     var valid = re.test(phone);
     if (valid) {
